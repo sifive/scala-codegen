@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Scala code generator from Scalameta AST",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "eslint lib && nyc -r=text -r=lcov mocha test"
   },
