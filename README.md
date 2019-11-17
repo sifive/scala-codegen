@@ -1,4 +1,4 @@
-# scala-codegen [![NPM version](https://img.shields.io/npm/v/scala-codegen.svg)](https://www.npmjs.org/package/scala-codegen) ![](https://github.com/sifive/scala-codegen/workflows/Node%20CI/badge.svg)
+# scala-codegen [![NPM version](https://img.shields.io/npm/v/scala-codegen.svg)](https://www.npmjs.org/package/scala-codegen) [![](https://github.com/sifive/scala-codegen/workflows/Node%20CI/badge.svg)](https://github.com/sifive/scala-codegen/actions)
 
 
 Scala code generator from [Scalameta AST](https://scalameta.org/docs/trees/examples.html).
