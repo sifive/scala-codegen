@@ -1,0 +1,31 @@
+{
+  "name": "scala-codegen",
+  "version": "0.1.0",
+  "description": "Scala code generator from Scalameta AST",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "eslint lib && nyc -r=text -r=lcov mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sifive/scala-codegen.git"
+  },
+  "author": "SiFive",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sifive/scala-codegen/issues"
+  },
+  "homepage": "https://github.com/sifive/scala-codegen#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@drom/eslint-config": "^0.10.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "scalameta-parsers": "^4.2.1"
+  },
+  "eslintConfig": {
+    "extends": "@drom/eslint-config/eslint4/node8"
+  }
+}
