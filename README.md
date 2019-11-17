@@ -1,4 +1,5 @@
-# scala-codegen
+# scala-codegen [![NPM version](https://img.shields.io/npm/v/scala-codegen.svg)](https://www.npmjs.org/package/scala-codegen)
+
 
 Scala code generator from [Scalameta](https://scalameta.org) AST.
 
