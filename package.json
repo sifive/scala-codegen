@@ -1,6 +1,6 @@
 {
   "name": "scala-codegen",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Scala code generator from Scalameta AST",
   "main": "lib/index.js",
   "files": [
