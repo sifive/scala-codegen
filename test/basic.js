@@ -11,8 +11,34 @@ const _ = codegen.nodes;
 
 const expect = chai.expect;
 const parseStat = scalametaParsers.parseStat;
+const parseSource = scalametaParsers.parseSource;
 
-describe('parser -> codegen', () => {
+describe('parseSource -> codegen', () => {
+  [
+`package a.b.c
+
+import a._
+import foo.bar.{baz, taz}
+
+class AA () extends A {
+  val a = A(B(c = C(0), d = 42))
+  var foo = "BAR"
+}
+`
+  ].map(a => {
+    it(a, done => {
+      const b = parseSource.call({}, a);
+      const c = generate(b);
+      if (c !== a) {
+        console.log(JSON.stringify(b, null, 2));
+        expect(c).to.eq(a);
+      }
+      done();
+    });
+  });
+});
+
+describe('parseStat -> codegen', () => {
   [
     '(1 + 2)',
     '(1 + (200 * 31))',
@@ -28,6 +54,7 @@ describe('parser -> codegen', () => {
       const b = parseStat.call({}, a);
       const c = generate(b);
       if (c !== a) {
+        console.log(b);
         expect(c).to.eq(a);
       }
       done();
